@@ -12,6 +12,13 @@
 		
 			<atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>Glossary</title>
+				<link>http://localhost:1313/docs/glossary/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/docs/glossary/</guid>
+				<description>&lt;h1 id=&#34;glossary&#34;&gt;Glossary&lt;a class=&#34;anchor&#34; href=&#34;#glossary&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;hapkido&#34;&gt;Hapkido&lt;a class=&#34;anchor&#34; href=&#34;#hapkido&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;jujitsu&#34;&gt;Jujitsu&lt;a class=&#34;anchor&#34; href=&#34;#jujitsu&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;dl&gt;&#xA;&lt;dt&gt;tai sabaki&lt;/dt&gt;&#xA;&lt;dd&gt;body management, mainly footwork to get you out of the line of attack and into a position to counter.&lt;/dd&gt;&#xA;&lt;dt&gt;push stepping&lt;/dt&gt;&#xA;&lt;dd&gt;using your back foot to propel you forward (or whatever direction you need to go in).&lt;/dd&gt;&#xA;&lt;dt&gt;mokuso&lt;/dt&gt;&#xA;&lt;dd&gt;clearing the mind.&lt;/dd&gt;&#xA;&lt;/dl&gt;</description>
+			</item>
+			<item>
 				<title>To Do List</title>
 				<link>http://localhost:1313/docs/todo/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

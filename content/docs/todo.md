@@ -7,7 +7,7 @@ bookToc: false
 # bookCollapseSection: false
 # bookComments: true
 ---
-## To Do
+## To Do 
 September 27, 2020
 
 * Verify direction of sweep in tai sabaki 4.
