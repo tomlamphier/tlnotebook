@@ -23,6 +23,7 @@ The closed hand strikes are done with a tight fist. The wrist should be straight
 | hammer fist | Strike with the bottom of the hand. |
 | single-knuckle / phoenix | Close-quarters strike with index knuckle extended. |
 | four-knuckle / bear claw | Close-quarters strike with 4 knuckles extended. |
+| four-knuckle / bear claw | Close-quarters strike with 4 knuckles extended. |
 
 ### Open Hand 
 | Strike | Description |
