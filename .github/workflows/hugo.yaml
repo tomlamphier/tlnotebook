@@ -3,6 +3,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,34 +15,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 1. THE BUILD JOB
   build:
     runs-on: ubuntu-latest
+    # CRITICAL: Map the step output to a job output
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          fetch-depth: 0
+          submodules: recursive # Fetches themes if they are submodules
+
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
+
       - name: Build with Hugo
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      # CRITICAL: Upload the artifact so the deploy job can access it
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
+  # 2. THE DEPLOY JOB
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps: deployment.outputs.page_url }}
+      # FIX: Reference the URL from the build job output instead of steps
+      url: ${{ needs.build.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: build # Ensures build finishes first
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
