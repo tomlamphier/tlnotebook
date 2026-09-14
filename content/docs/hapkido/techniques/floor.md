@@ -1,6 +1,6 @@
 +++
 date = '2026-09-13T22:21:02-04:00'
-draft = true
+draft = false
 title = 'Floor Techniques'
 +++
 ## Floor Techniques
