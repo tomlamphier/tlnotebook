@@ -9,7 +9,7 @@ These techniques are done from the floor; You are on your back, presumably after
 Knees are up.
 
 1.  Attacker tries to stomp your face.  Plum blossom block pushing attacker's foot to the side (not across).
-Grab with both hands above knee and pull backward. Groin strile, then right axe kick, left leg clear,
+Grab with both hands above knee and pull backward. Back fist to groin, then right axe kick, left leg clear,
 right chin strike + axe kick.
 
 2.  Same attack as above.  Plum blossom to push foot across your body. 
